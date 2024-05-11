@@ -4,3 +4,4 @@ Pipfile.lock
 *.png
 mypy_cache
 db_data/**
+outputs
