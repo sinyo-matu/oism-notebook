@@ -2,3 +2,5 @@
 .ipynb_checkpoints
 Pipfile.lock
 *.png
+mypy_cache
+db_data/**
