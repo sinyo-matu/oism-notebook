@@ -8,7 +8,10 @@
 #   with-sources: false
 
 -e file:.
+annotated-types==0.6.0
+    # via pydantic
 anyio==3.7.0
+    # via httpx
     # via jupyter-server
 appnope==0.1.3
     # via ipykernel
@@ -31,6 +34,9 @@ beautifulsoup4==4.12.2
     # via nbconvert
 bleach==6.0.0
     # via nbconvert
+certifi==2024.2.2
+    # via httpcore
+    # via httpx
 cffi==1.15.1
     # via argon2-cffi-bindings
 comm==0.1.3
@@ -59,8 +65,15 @@ fonttools==4.40.0
     # via matplotlib
 fqdn==1.5.1
     # via jsonschema
+h11==0.14.0
+    # via httpcore
+httpcore==1.0.5
+    # via httpx
+httpx==0.27.0
+    # via oism-note
 idna==3.4
     # via anyio
+    # via httpx
     # via jsonschema
 ipykernel==6.23.2
     # via ipywidgets
@@ -225,6 +238,10 @@ pyarrow==12.0.1
     # via oism-note
 pycparser==2.21
     # via cffi
+pydantic==2.7.1
+    # via oism-note
+pydantic-core==2.18.2
+    # via pydantic
 pygments==2.15.1
     # via ipython
     # via jupyter-console
@@ -282,6 +299,7 @@ six==1.16.0
     # via rfc3339-validator
 sniffio==1.3.0
     # via anyio
+    # via httpx
 soupsieve==2.4.1
     # via beautifulsoup4
 sqlalchemy==2.0.16
@@ -324,6 +342,8 @@ traitlets==5.9.0
     # via notebook
     # via qtconsole
 typing-extensions==4.6.3
+    # via pydantic
+    # via pydantic-core
     # via sqlalchemy
 tzdata==2023.3
     # via pandas

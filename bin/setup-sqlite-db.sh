@@ -1,5 +1,4 @@
 #! /bin/bash
-PROD_MONGODB_CONNECTION_URI="mongodb+srv://eliamo:64659027Qy@cluster0.k6d04.mongodb.net/?authSource=admin&replicaSet=atlas-e5y1lc-shard-0&readPreference=primary&ssl=true"
 mongoexport --uri=$PROD_MONGODB_CONNECTION_URI --db=phitems --collection=items --fields="code,item_name,label,material,price" --type=csv --out="db_data/items.csv"
 mongoexport --uri=$PROD_MONGODB_CONNECTION_URI --db=taobao --collection=order_items --fields="id,customer_id,item_code_ext,order_datetime,rate,status" --type=csv --out="db_data/order_items.csv"
 
